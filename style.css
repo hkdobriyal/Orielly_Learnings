@@ -1,38 +1,131 @@
-body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-.nav-section{
-    display: flex;
-    /* justify-items:start; */
-    position: fixed;
-    height: 100%;
-    border: 2px solid black;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; 
-    background-color: whitesmoke;   
-}
-.icons{
-    list-style: none ;
-    /* margin-left:0; */
-    border: 2px solid black;
+.nav-section {
+  display: flex;
+  position: fixed;
+  width: 5rem;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  /* margin-top:0;   */
 }
 
-.line{
-    width: 2.5rem;
-    height: .2rem;
-    margin-bottom:.6rem;
-    background-color: black;
-    cursor: pointer;
+.cross {
+  cursor: pointer;
 }
 
-.line1,.line3{
-    width: 1.8rem;
+.line {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin-bottom: 0.6rem;
+  background-color: black;
+  border-radius: 10rem;
 }
-.line2{
-    /* width: 1rem; */
+
+.line1,
+.line3 {
+  width: 1.8rem;
+}
+.line2 {
+  /* width: 1rem; */
+}
+
+/* .line1:hover,.line3:hover{
+    background-color: red;
+    
+} */
+
+.icons {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.fa-brands {
+  transition: all 0.2s;
+  margin-right: 2rem;
+  margin-bottom: 2.5rem;
+}
+.fa-brands:hover {
+  color: orangered;
+}
+
+.lnav-section {
+  background-image: linear-gradient(
+      to top,
+      rgba(29, 29, 56, 0.5),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(./Images/house-pool-tree.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 19rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 5rem;
+  text-align: center;
+}
+.heading {
+  text-transform: capitalize;
+  color: rgb(255, 133, 88);
+}
+
+.pages {
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.pages > li > a,
+.lnav-foot {
+  color: white;
+}
+
+.lnav-foot {
+  font-size: 0.8rem;
+}
+
+.main-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./Images/hotel\ img.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-body > h1,
+p {
+  color: white;
+}
+
+.main-body>button{
+    background-color: orange;
+    border-radius:5rem ;
+  background:linear-gradient(to right rgba(255, 176, 6),
+    to left rgba(255, 176, 6)
+  );
+  padding: .5rem;
+  width: 6rem;
+  border: none;
+  cursor: pointer;
+
 }
