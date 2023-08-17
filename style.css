@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-section{
+    display: flex;
+    /* justify-items:start; */
+    position: fixed;
+    height: 100%;
+    border: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: whitesmoke;   
+}
+.icons{
+    list-style: none ;
+    /* margin-left:0; */
+    border: 2px solid black;
+}
+
+.line{
+    width: 2.5rem;
+    height: .2rem;
+    margin-bottom:.6rem;
+    background-color: black;
+    cursor: pointer;
+}
+
+.line1,.line3{
+    width: 1.8rem;
+}
+.line2{
+    /* width: 1rem; */
+}
