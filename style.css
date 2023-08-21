@@ -1,8 +1,9 @@
-body {
+*{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing:border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .nav-section {
@@ -40,7 +41,6 @@ body {
 
 .fa-brands {
   transition: all 0.2s;
-  margin-right: 2rem;
   margin-bottom: 2.5rem;
 }
 .fa-brands {
@@ -80,7 +80,9 @@ body {
   position: relative;
   color: red;
 }
-form button {
+
+/* ******************************* */
+.form form button {
   position: absolute;
   /* top: -10px; */
   right: 1rem;
@@ -90,6 +92,7 @@ form button {
   cursor: pointer;
   color: rgb(255, 133, 88);
 }
+/* ******************************* */
 
 .form form input:focus {
   color: rgb(255, 133, 88);
@@ -155,6 +158,7 @@ li {
 }
 
 .main-body {
+   margin-left: 5rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(./Images/hotel\ img.jpg);
   height: 100vh;
@@ -186,28 +190,61 @@ li {
   cursor: pointer;
 }
 
+
 /* ----------------------------------------------------- */
 
 .about-us {
+  margin-left: 5rem;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: space-around;
-  height: 50vh;
+  height: 65vh;
   text-align: center;
-  /* padding:5rem; */
-  /* margin-bottom: 10rem; */
-  background-color: rgb(202, 197, 197);
+  background-color: rgb(204, 202, 202);
 }
 
-.about-us>div {
-  /* margin-top: -5rem; */
+.left-about-section p {
+ line-height:2rem;  
+}
 
+.left-about-section>h1,p,button{
+  border-bottom: 20rem; 
+  margin-bottom: 3rem;
+
+}
+.right-about-section{
+  position: relative;
+  width: 30rem;
+  aspect-ratio: 1/0.75 ;
 }
 .right-about-section img{
-  width: 25rem;
-  height: 20rem;
-  border-radius: 5rem;
+  width: 20rem;
+  position: absolute;
+  box-shadow: 1rem 1rem 1rem ;
+  transition: all .2s;
+}
+.right-about-section img:hover{
+  transform: scale(1.2);
+}
+.right-about-section .img1:hover{z-index: 100;}
+.right-about-section .img2:hover{z-index: 100;}
+.right-about-section .img3:hover{z-index: 100;}
+.right-about-section .img4:hover{z-index: 100;}
+
+.right-about-section .img1{
+  right: 0;
+}
+.right-about-section .img2{
+  left: 0rem;
+  top: 3rem;
+}
+.right-about-section .img3{
+  left: 3rem;
+  top: 6rem;
+}
+.right-about-section .img4{
+  left: 6rem;
+  top: 9rem;
 }
 .h2{
   width: 18rem;
@@ -225,3 +262,212 @@ li {
   padding: 0.5rem;
   width: 9rem;
 }
+
+/* ----------------------------------------------------- */
+
+.card-section{
+  margin-left:5rem;
+  /* text-align: center; */
+}
+
+.hd{
+  text-align: center;
+  margin: 4rem 0;
+  text-transform: capitalize;
+}
+
+.cards{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly ;
+  gap:7rem 5rem;
+  
+
+}
+.card1{
+  border-radius: 1rem;
+  width: 28rem;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  background-color: rgba(29, 29, 56, 0.9); 
+  box-shadow: 1rem 1rem 2rem grey ; 
+}
+
+.card1>img{
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  height: 60%;
+}
+.card1-in h1{
+  text-align: end;
+}
+
+.card1-in{
+  padding: 1rem;
+  color: white;
+  width:100%;
+  line-height: 2rem;
+}
+
+.card1-in>button{
+  border-radius:3rem ;
+  background-color: transparent;
+   color:  rgb(255, 133, 88);
+   border: 1px solid rgb(255, 133, 88);
+   padding:0.6rem 1rem;
+   cursor: pointer;
+  }
+  
+  .card-foot{
+    text-align: center;
+    height: 10rem;    
+  }
+  .card-foot>button{
+    background-color: transparent;
+     color:  rgb(255, 133, 88);
+     border: 1px solid rgb(255, 133, 88);
+     padding:0.6rem 1rem;
+     cursor: pointer;
+     margin-top: 4.5rem 
+     
+}
+
+  /* ----------------------------------------------------- */
+  
+  .customer-section{
+    height: 54vh;                                    
+    background-color: rgba(29, 29, 56, 0.9);
+    text-align: center;      
+    margin-left:5rem;
+  }
+  .customer-section-in{
+margin: auto;
+    width: 90%;
+    height: 100%;
+  }
+  
+  .all-cards{
+    display: flex;
+    justify-content: space-around;
+  }
+  .cs-head{
+    color:  rgb(255, 133, 88);
+    font-size: 1.5rem;
+    padding-top:1rem;
+   
+  }
+  .cs-about{
+    color: white;
+    margin: 4.5rem 0 ;
+  }
+  .cs-card{
+  text-align:start;   
+    background-color: white;
+    display:flex;    
+    width:30rem;
+    height: 7rem;
+  }
+  .cs-card img{
+      width: 10rem;
+    object-fit: cover;
+    height: 100%;
+    padding: 0.7rem;
+    margin-left: -1.2rem;
+  }
+  .cs-card-about h1{
+    font-size: 1.5rem;
+    margin:0.5rem 0;
+  }    
+  .cs-card-about h2{
+    margin:0.5rem 0;
+    color:  rgb(255, 133, 88);
+    font-size: 0.9rem;
+  }
+  .cs-card-about p{
+    font-size:0.75rem;
+  }
+  /* ----------------------------------------------------- */
+  
+  .contact-scetion{
+    height: 40vh;
+    background-color: rgba(9, 9, 17, 0.9);  
+    display: flex; 
+    justify-content: space-around;
+    margin-left:5rem;
+    color: white;
+  }
+  
+  .contact-scetion a{
+    
+    color: white;
+  }
+  .contact-scetion h2{    
+    margin: 1rem 0;
+    color:  rgb(255, 133, 88);
+  }
+  .gh,.explore,.contact{
+line-height: 2.5rem;
+font-size: 0.9rem;
+text-transform: capitalize;
+}
+
+.contact-form{
+  margin-top: 1rem;
+  position: relative;
+}
+.contact-form input{
+  padding: 0.5rem;
+  width: 15rem;
+  outline: none ;  
+}
+
+.contact-form button{
+  position: absolute;
+  background:rgb(255, 133, 88);
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 0.6rem;
+  right: 0;
+  top:0.2rem;   
+}
+
+.image-gallery{
+  width: 26.5rem;  
+  display: flex;
+  gap: 0.12rem;  
+  flex-wrap: wrap ;
+  padding: 1rem;
+  
+}
+
+.image-gallery img{ 
+  width:8rem;
+  aspect-ratio: 1/1;
+  object-fit: cover ;
+  transition: all 0.5S;
+}
+.image-gallery img:hover{
+transform: scale(1.2);
+}
+  /* ----------------------------------------------------- */
+  
+  .foot{
+    height: 6vh;
+    background-color: black;  
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-left:5rem;
+    align-items: center;
+    font-size: 0.7rem;
+  }
+  .lfoot,.rfoot{
+    margin:0 1rem;
+  }
+  .rfoot span{
+    color:  rgb(255, 133, 88);
+  }
