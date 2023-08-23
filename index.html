@@ -8,18 +8,29 @@
       src="https://kit.fontawesome.com/3c57196b6b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- 1st  left nav start  -->
 
-    <div class="nav-section">
-      <!-- cross button start  -->
-      <div class="cross">
-        <div class="line line1"></div>
-        <div class="line line2"></div>
-        <div class="line line3"></div>
-      </div>
+    <div class="lsidebar">
+        <input type="checkbox" class="checkbox" id="click" hidden>
+
+      <div class="nav-section">
+        <!-- cross button start  -->
+       <label for="click">
+        <div class="cross">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+       </label>
       <!-- cross button end  -->
 
       <!-- icon start  -->
@@ -40,32 +51,82 @@
         </ul>
       </div>
       <!-- icon end  -->
-
+      
       <!-- nav footer start  -->
       <div class="nav-foot">
         <p>2023</p>
       </div>
       <!-- nav footer end  -->
+    </div> 
+    
+  
+  <!-- left nav end  -->
+  
+  <!-- ----------------------------------------------------------------  -->
+  
+  <!-- 2nd left nav start  -->
+  <!-- <div class="lsidebar"> -->
+  
+  <div class="lnav-section">
+    <!-- head button start  -->
+      <div class="head">
+        <!-- heading start  -->
+        <div class="heading">
+          <h1>Grand Hotel</h1>
+        </div>
+        <!--heading end -->
+        <!-- form start  -->
+    <div class="form">
+      <form action="#">
+        <input type="text" placeholder="search....." />
+        <button type="button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </div>
-
+        <!-- form end  -->
+      </div>
+      <!-- head button end  -->
+    
+      <!-- pages start  -->
+      <div> 
+        <ul class="pages">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about-us">about us</a></li>
+          <li><a href="#rooms">rooms</a></li>
+          <li><a href="#events">events</a></li>
+          <li><a href="#gallery">gallery </a></li>
+          <li><a href="#customer">customer</a></li>
+          <li><a href="#contact">Contact</a></li>         
+        </ul>
+      </div>
+      <!-- pages end  -->
+    
+      <!-- lnav footer start  -->
+      <div class="lnav-foot">
+        <p>&copy; 2023 Hemant Kumar. All Right Reserved </p>
+      </div>
+      <!-- lnav footer end  -->
+    </div>
+  </div>
     <!-- left nav end  -->
-
-    <!-- ----------------------------------------------------------------  -->
-
-    <!-- 2nd left nav start  -->
-
 
     
     <!-------------------------------------------------------------------->
 
     <!-- main-body start  -->
-    <div class="main-body " id="home">
-      <div class="logo">
-        <img src="./Images/hk logo.png" alt="" />
+    <div class="main-body" id="home">
+      <div class="main-body-head">
+        <div class="logo">
+          <img src="./Images/hk logo.png" alt="" />
+        </div>
+        <h3>Grand Hotel</h3>
       </div>
-      <h1>Welcome To Grand Hotel</h1>
-      <p>Make Your Life Luxurious</p>
-      <button>Check out</button>
+      <div class="main-body-header">
+        <h1>Welcome To Grand Hotel</h1>
+        <p>Make Your Life Luxurious</p>
+        <button id="check_out">Check out</button>
+      </div>
     </div>
     <!-- main-body end  -->
 
@@ -74,7 +135,10 @@
     <div class="about-us" id="about-us">
       <div class="left-about-section">
         <h1 class="h1">About us</h1>
-        <h1 class="h2"></h1>
+       <div class="u-line">
+        <h1 class="h-1"></h1>
+        <h1 class="h-2"></h1>
+       </div>
         <h1 class="h3">Grand hotel</h1>
         <p class="p">
           dolor sit amet consectetur a  as  elit. Maxime
@@ -101,6 +165,10 @@
         <h1>
           Rooms in grand hotel
       </h1>
+      <div class="u-line">
+        <h1 class="h-1"></h1>
+        <h1 class="h-2"></h1>
+       </div>
     </div>
     <div class="cards">
       <div class="card1">
@@ -222,7 +290,7 @@
     
 
     <!-- image-gallery start  -->    
-    <div class="image-gallery">
+    <div class="image-gallery" id="gallery">
     <img src="./Images/1 room.jpg" alt="">
     <img src="./Images/2 room.jpg" alt="">
     <img src="./Images/3 room.jpg" alt="">
@@ -244,5 +312,14 @@
 </div>
     </div>
     <!-- foot end  -->
+
+
+    <!-- <script>
+      let btn=document.getElementById('check_out')
+      console.log(btn);
+      btn.addEventListener('click',()=>{       
+        alert('🙂Thank You!! Visit Again🙂')
+      })
+    </script> -->
   </body>
 </html>
