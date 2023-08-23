@@ -128,6 +128,7 @@ margin-bottom: 1rem;
   position: absolute;
   /* top: -10px; */
   right: 1rem;
+  font-size: 1.2rem;
   top: 0.7rem;
   background-color: transparent;
   border: none;
@@ -297,7 +298,9 @@ li {
   text-align: center;
   background-color: rgb(204, 202, 202);
 }
-.left-about-section {
+.left-about-section .h1{
+  font-size: 3rem;
+  margin-top: 1rem;
 }  
 .left-about-section p {
  line-height:2rem;  
@@ -522,12 +525,17 @@ margin: auto;
     margin: 1rem 0;
     color:  #deaa86;
   }
-  .gh,.explore,.contact{
+  .gh,.contact{
 line-height: 2.5rem;
 font-size: 0.9rem;
 text-transform: capitalize;
 }
+.explore{
+  line-height: 2.2rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
 
+}
 .contact-form{
   margin-top: 1rem;
   position: relative;
@@ -589,15 +597,462 @@ transform: scale(1.2);
   /* --------------------------------------------------------------------------------- */
   /* RESPONSIVE WEB DESIGN  */
 
-  @media screen and (max-width: 1200px){
+  @media screen and (max-width:1200px){
+
+    .right-about-section{
+      width:27rem;
+    }
+    .left-about-section p {
+
+    }
+    .right-about-section img {
+      width: 18rem;
+  }
+  .card1 {    
+    width: 26rem;
+  }
+  .cs-card {    
+    width: 29rem;
+}
+.cs-card {  
+  height: 6rem;
+}
+.cs-card-about h1 {
+  font-size: 1.2rem;
+}
+.cs-card-about h2 {
+  font-size: 0.8rem;
+}
+.cs-card-about p {
+  font-size: 0.75rem;
+}
+.image-gallery {
+  width: 25.5rem;
+}
+.image-gallery img {
+  width: 7rem;
+}
+.explore {
+  line-height: 2rem;
+}
+
+  }
+
+
+  @media screen and (max-width:1000px){
+    .main-body-header h1 {
+      font-size: 3rem;
+    }
+    .main-body-header {
+      height: 40rem;
+    }
+    .main-body-header p {
+      font-size: 1.9rem;
+    }
+    .main-body-header button {
+      font-size: 1rem;
+      width: 9rem;
+    }
+    .h-1 {
+      width: 8rem;
+    }
+    .h-2 {
+      width: 15rem;
+    }
+    .left-about-section .h1 {
+      font-size: 2.8rem;
+        margin-top: 0rem;
     
   }
-  @media screen and (max-width: 1000px){
+  .left-about-section p,.left-about-section button,.left-about-section .h3{
+    margin-bottom:2rem;
+  }
+  .left-about-section .h3{
+    font-size: 1.8rem;
+  }
+  .left-about-section p{    
+    font-size: 0.9rem;
+  }
+  .right-about-section {
+    width: 25rem;
+}
+.right-about-section img {
+  width: 15rem;
+}
+.right-about-section .img1 {
+  right: 1rem;
+}
+.right-about-section .img2 {
+  left: 2rem;
+  top: 3rem;
+}
+.right-about-section .img3 {
+  left: 4rem;
+  top: 6rem;
+}
+.right-about-section .img4 {
+  left: 7rem;
+  top: 9rem;
+}
+.card1 {
+  width: 21rem;
+}
+.card-foot>button{ 
+  padding: 0.5rem 0.9rem;  
+}
+.left-about-section p {
+  line-height: 1.6rem;
+}
+.hd {
+  margin: 3rem 0;
+}
+.cards {
+  gap: 6rem 4rem;
+}
+.cs-about {
+  margin: 3.5rem 0;
+  line-height:2rem;
+}
+.cs-card {
+  width: 22rem;
+  height: 5.5rem;
+}
+.cs-card-about h2 {
+  font-size: 0.75rem;
+  margin: 0.3rem 0;
+ 
+}
+.cs-card-about h1 {
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+}
+.cs-card img {
+  width: 9rem;
+  padding: 0.5rem;
+    margin-left: -2rem;
+}
+.all-cards {
+  gap: 3rem;
+}
+.cs-card-about p {
+  font-size: 0.61rem;
+}
+
+.explore {
+  line-height: 1.9rem;
+  font-size: 0.8rem;
+}
+.gh,.contact,.explorer{
+  /* z-index: -1; */
+}
+
+.gh,.contact {
+  line-height: 1.9rem;
+  font-size: 0.8rem;
+}
+.contact-scetion {
+  gap: 3rem;
+  padding-left: 0.5rem;
+}
+.image-gallery img {
+  width: 4rem;
+}
+.image-gallery {
+  width: 14.3rem;
+}
+.contact-form button { 
+  top: 0rem;
+}
+
+  }
+
+
+  @media screen and (max-width:800px){
+
+    .nav-section {
+      display: flex;
+      position: fixed;
+      width: 4rem;
+    }
+    .checkbox:checked~.lnav-section {
+      left: 4rem;
+      width: 17rem;
+  }
+  .heading {
+    font-size: 0.9rem;
+  
+  }
+  .form form input {
+    padding: 0.6rem;
+    width: 15rem;
+  }
+  .form form button {   
+    font-size: 1rem;
+}
+.pages > li > a, .lnav-foot {
+  font-size: 0.8rem;
+}
+.lnav-foot p{
+  font-size:0.7rem ;
+  margin-bottom: 1rem;
+}
+    .main-body-head h3 {
+      font-size: 1rem;
+  }
+
+  .main-body,.about-us,.card-section,.customer-section,.contact-scetion,.foot {
+    margin-left: 4rem;
+  }
+  .logo > img {
+    width: 2rem;
+}
+    .main-body-header {
+      height: 35rem;
+  }
+    .main-body-header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 0rem;
+  }
+  
+  .main-body-header p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+} 
+
+.left-about-section .h1 {
+  font-size: 2.5rem;
+}
+.right-about-section {
+  width: 23rem;
+}
+.right-about-section .img1 {
+  right: 1rem;
+  top: -2rem;
+}
+
+.right-about-section .img2 {
+  left: 0rem;
+  top: 1rem;
+}
+
+.right-about-section .img3 {
+  left: 2rem;
+  top: 4rem;
+}
+.right-about-section .img4 {
+  left: 4rem;
+  top: 7rem;
+}
+
+.left-about-section .h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.left-about-section p {
+  line-height: 1.5rem;
+}
+.h-1 {
+  width: 7rem;
+  margin: 1.5rem auto 1rem;
+}
+.h-2 {
+  width: 13rem;
+margin: 0px auto 1.5rem;
+}
+
+.left-about-section .h3 {
+  font-size: 1.5rem;
+margin-bottom: 1.5rem;
+}
+
+button, .left-about-section .h3 {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  
+  padding: 0.4rem;
+  width: 8rem;
+}
+.card1 {
+  width: 17rem;
+}
+
+.card1-in h2{
+  font-size: 1.4em;
+  }
+.card1-in p{
+  font-size: 1em;
+  }
+.card1-in h1{
+  font-size: 1.6em;
+  }
+   .left-about-section .h3 {
+    margin-bottom: -0.5rem;
+  }
+  .card1-in>button { 
+  margin-bottom: -0.5rem;
+  padding: 0.5rem 0.9rem;
+}
+.gh{
+  /* margin-left: 1rem; */
+}
+.contact-scetion {
+  gap: 1.5rem;
+}
+.contact {
+  line-height: 1.5rem;
+}
+.contact-form input {
+  padding: 0.4rem;
+  width: 12rem;
+}
+.contact-form button {
+  padding: 0.55rem;
+}
+.image-gallery img {
+  width: 3.4rem;
+}
+.image-gallery {
+  width: 13rem;
+}
+.lfoot,.rfoot{
+font-size: 0.65rem;
+}
+.rfoot{
+
+}
+
+}
+
+
+@media screen and  (max-width: 700px){
+  .nav-section {
+    width: 3.5rem;
+  }
+  .main-body,.about-us,.card-section,.customer-section,.contact-scetion,.foot {
+    margin-left: 3.5rem;
+  }
+  
+  .right-about-section img {
+    width: 12rem;
+  }
+  .left-about-section .h3 {
+  margin-bottom: 0.5rem;
+}
+.contact-scetion {
+  gap: 1rem;
+}
+.contact-form input {
+  padding: 0.3rem;
+  width: 11rem;
+}
+.contact-form button {
+  padding: 0.4rem;
+}
+
+}
+
+@media screen and  (max-width: 680px){
+  .about-us {
+    flex-direction: column;
+    height: 102vh;
+  }
+  
+  .right-about-section .img1 {
+    right: 11rem;
+    top: -2rem;
+  }
+  .right-about-section .img2 {
+    left: 2rem;
+    top: 1rem;
+}
+
+.right-about-section .img3 {
+  left: 5rem;
+  top: 4rem;
+}
+.right-about-section .img4 {
+  left: 8rem;
+  top: 7rem;
+}
+.all-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.customer-section {
+  height: 60vh;   
+}
+.cs-about {
+  margin: 2.5rem 0;
+    line-height: 2rem;
+  }
+  
+  .contact-scetion {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
     
   }
-  @media screen and (max-width: 800px){
-    
+  .explore{
+    margin-left: -5rem;
   }
-  @media screen and  (max-width: 600px){
-    
+  .foot{
+    flex-direction: column;
+    height: 8vh;
+    justify-content: center;
+    text-align: center;
   }
+  .main-body-header h1 {
+    font-size: 2rem;
+    letter-spacing: 0rem;
+}
+.main-body-header p {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+.main-body-header button {
+  font-size: 0.7rem;
+  width: 6rem;
+}
+.main-body-header {
+  height: 28rem;
+}
+.cs-card {
+  width: 16rem;
+  height: 4.5rem;
+}
+
+.cs-card-about h2 {
+  font-size: 0.65rem;
+  margin: 0.1rem 0;
+}
+
+.cs-card-about h1 {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.cs-card {
+  width: 16rem;
+  height: 4.5rem;
+}
+
+.cs-card-about p {
+  font-size: 0.50rem;
+}
+
+
+}
+/* .contact-scetion {
+}
+.gh,.explore,.contact,.image-gallery{  
+  /* width: 100%; */
+  /* margin:auto ;
+} */ 
